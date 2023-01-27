@@ -1,0 +1,26 @@
+.btn-box {
+  margin-top: 19px;
+  padding-bottom: 160px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  &__red {
+    border-radius: 50px;
+    margin-right: 8px;
+    padding-left: 15.5px;
+    padding-right: 15.5px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    border: 0;
+    height: 24px;
+    background-color: var(--darkpink);
+    color: var(--white);
+  }
+  &__white {
+    @extend .btn-box__red;
+    background-color: var(--white);
+    color: var(--darkpink);
+  }
+}
