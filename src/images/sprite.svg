@@ -27,9 +27,14 @@
 <symbol id="icon-home" viewBox="0 0 35 32">
 <path fill="#d31342" style="fill: var(--color5, #d31342)" d="M32.64 15.401c0.599-0.65 0.541-1.646-0.129-2.225l-14.772-12.75c-0.671-0.578-1.745-0.566-2.402 0.027l-14.822 13.403c-0.656 0.594-0.689 1.589-0.071 2.222l0.372 0.382c0.617 0.633 1.613 0.708 2.224 0.168l1.108-0.979v14.326c0 0.879 0.722 1.591 1.612 1.591h5.778c0.89 0 1.612-0.712 1.612-1.591v-10.023h7.37v10.023c-0.013 0.878 0.624 1.59 1.515 1.59h6.123c0.89 0 1.613-0.711 1.613-1.59v-14.124c0 0 0.306 0.264 0.683 0.592s1.168 0.065 1.767-0.586l0.42-0.455z"></path>
 </symbol>
+
 <symbol id="icon-right-arrow-red" viewBox="0 0 26 32">
 <path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.542 3.2l16.825 12.8-16.825 12.8"></path>
 </symbol>
+<symbol id="icon-right-arrow-white" viewBox="0 0 26 32">
+<path fill="none" stroke="#ffffff" style="stroke: var(--color1, #ffffff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.542 3.2l16.825 12.8-16.825 12.8"></path>
+</symbol>
+
 <symbol id="icon-small-red-dot" viewBox="0 0 32 32">
 <path fill="#c7133e" style="fill: var(--color6, #c7133e)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
 </symbol>
