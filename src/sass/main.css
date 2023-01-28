@@ -53,4 +53,55 @@ ul {
   margin-top: 6px;
   width: 199px;
   height: 50px;
+}
+
+.header-box {
+  position: relative;
+  background-color: var(--lightpink);
+  background-image: url("../images/bigice.png"), url("../images/ellipse.png");
+  background-repeat: no-repeat;
+  background-position: left 117px top 94px, left 36px top 83px;
+}
+.header-box__text {
+  font-weight: 400;
+  font-style: normal;
+  max-width: 218px;
+  margin-top: 137px;
+  color: var(--white);
+  font-family: var(--titan);
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.header-box__text--item {
+  font-size: 48px;
+  line-height: 0.96;
+  color: var(--darkpink);
+}
+
+.btn-box {
+  margin-top: 19px;
+  padding-bottom: 160px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.btn-box__red, .btn-box__white {
+  border-radius: 50px;
+  margin-right: 8px;
+  padding-left: 15.5px;
+  padding-right: 15.5px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  border: 0;
+  height: 24px;
+  background-color: var(--darkpink);
+  color: var(--white);
+}
+.btn-box__white {
+  background-color: var(--white);
+  color: var(--darkpink);
 }/*# sourceMappingURL=main.css.map */
