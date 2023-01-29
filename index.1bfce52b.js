@@ -1,0 +1,2 @@
+(()=>{let e=document.querySelectorAll(".customer-review__slide-dots li"),t=document.querySelectorAll(".customer-review__item");e.forEach((s=>{s.addEventListener("click",(()=>{let i=s.dataset.id;s.classList.contains("is-active")||(e.forEach((e=>e.classList.remove("is-active"))),s.classList.add("is-active"),t.forEach((e=>e.dataset.id===i?e.classList.add("active"):e.classList.remove("active"))))}))}))})();
+//# sourceMappingURL=index.1bfce52b.js.map
