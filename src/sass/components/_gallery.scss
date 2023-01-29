@@ -1,0 +1,88 @@
+.gallery__section {
+        box-sizing: border-box;
+        margin: 0px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        list-style: none;
+        text-transform: none;
+        text-decoration: none;
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        justify-items: center;
+        align-content:center;
+        align-items:center;
+        border: none;
+        outline: none;
+        line-height:0;
+        background: linear-gradient(180deg, #c05f69 86px, rgba(255,255,255,1) 86px);
+        background-size: 430px;
+    }
+   
+    .gallery__column {
+        width:auto;
+        box-sizing: border-box;
+        display:flex;
+        justify-content: center;
+        align-items:center;}
+       
+        .gallery__animation{
+        max-width: 41px;
+        border: none;
+        border-radius: 6px;
+        border-color: none;}
+
+        .gallery__animation:hover {
+            transform: scale(1.1);
+        }
+        .gallery__animation:focus { 
+            transform: scale(1.1);
+        }
+
+        .gallery__animation-2X{
+            max-width: 82px;
+            border: none;
+            border-radius: 10px;
+            border-color: none;
+        }
+        .gallery__animation-2X:hover {
+            transform: scale(1.1);
+        }
+        .gallery__animation-2X:focus { 
+            transform: scale(1.1);
+        }
+     
+
+    
+    .gallery {
+        width:auto;
+        max-width:auto;
+
+        box-sizing: border-box;
+        display:flex;
+        justify-content: center;
+        align-items:center;}
+    
+    .gallery__column{
+        align-items:center;
+        display: grid;
+
+        grid-template-columns:
+            repeat(6, 0fr);
+        grid-auto-rows:(1,0fr);
+        column-gap: 0px;
+        row-gap: 0px;
+        grid-gap: 3px;
+        padding: none;
+    }
+
+    .gallery__row{
+        align-items: center;
+        display: grid;
+        column-gap: 0px;
+        row-gap: 0px;
+        grid-gap: 3px;
+        padding: none;
+        grid-auto-rows: repeat (2,1fr);
+    }
+        .gallery__space {padding-bottom: 20px;}
