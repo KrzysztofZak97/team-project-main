@@ -1,0 +1,67 @@
+.footer-box {
+  background-color: var(--backgroundpink);
+  & h3 {
+    color: var(--pink);
+    font-family: 'Titan One';
+    font-size: 18px;
+    line-height: 1.166;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+  }
+  & h2 {
+    font-family: 'Titan One';
+    font-size: 34px;
+    line-height: 1.147;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--darkpink);
+    margin-bottom: 49.59px;
+  }
+  &__social-list {
+    display: flex;
+    padding: 0;
+    gap: 28.24px;
+    &-container {
+      display: flex;
+      justify-content: end;
+    }
+  }
+  &__icon-container {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--pink);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__contact {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.86;
+    text-align: right;
+    margin: 46px 0 43px;
+  }
+  &__contact-link {
+    @extend .footer-box__contact;
+    color: var(--darkpink);
+    text-decoration: none;
+  }
+  &__all-rights {
+    border-top: 1px solid var(--footerborder);
+    padding: 22px 0 25px;
+    width: 100vw;
+    margin-left: -20px;
+
+    & p {
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.52;
+      text-align: center;
+      color: var(--textgrey);
+    }
+  }
+}
