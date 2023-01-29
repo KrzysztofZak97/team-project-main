@@ -6,10 +6,23 @@
     }
 
     .contacts {
-        // margin: 86px 0px 113px 0px;
-        background: linear-gradient(0deg, rgba(255, 245, 246, 1) 97%, rgba(255,255,255,1) 97%);
-        // without margins: full 1473px; pink: 1433px; white: 40px
-        
+        padding-bottom: 113px;
+        background: var(--backgroundpink);
+        background: linear-gradient(0deg, rgba(255, 245, 246, 1) 93%, rgba(255,255,255,1) 93%);
+
+        &__header-visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            border: 0;
+            padding: 0;
+            white-space: nowrap;
+            clip-path: inset(100%);
+            clip: rect(0 0 0 0);
+            overflow: hidden;
+        }
+
         &__wrapper {            
             display: flex;
             flex-direction: column;
@@ -79,7 +92,6 @@
             font-size: 12px;
             line-height: 150%;
             color: #907E82;
-    
         }
 
         &__button-wrapper {
@@ -93,7 +105,6 @@
         &__button {
             width: 161px;
             height: 44px;   
-            // padding: 0 17px 0 17px;
             border: none;
             border-radius: 22px;
             font-weight: 700;
