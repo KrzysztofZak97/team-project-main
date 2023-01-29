@@ -27,8 +27,9 @@
   .header-box {
     position: relative;
     background-color: var(--lightpink);
-    background-image: url('../images/bigice.png'), url('../images/ellipse.png');
+    background-image: url('../images/bigice.png'), url('../images/ellipsetablet.png');
     background-repeat: no-repeat;
-    background-position: left 117px top 94px, left 36px top 83px;
+    background-size: 143px 336px, 324px 332px;
+    background-position: left 378px top 63px, left 307px top 31px;
   }
 }

@@ -24,3 +24,9 @@
     color: var(--darkpink);
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .btn-box {
+    margin-top: 20px;
+    padding-bottom: 19px;
+  }
+}
