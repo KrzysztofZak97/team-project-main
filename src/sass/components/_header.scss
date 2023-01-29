@@ -23,3 +23,12 @@
     }
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-box {
+    position: relative;
+    background-color: var(--lightpink);
+    background-image: url('../images/bigice.png'), url('../images/ellipse.png');
+    background-repeat: no-repeat;
+    background-position: left 117px top 94px, left 36px top 83px;
+  }
+}
