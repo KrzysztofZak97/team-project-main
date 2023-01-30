@@ -1,0 +1,31 @@
+.advantages {
+  background-color: var(--backgroundpink);
+
+  &__hidden-header {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+  }
+
+  &__list-item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__list-header {
+    font-family: var(--titan);
+    font-size: 36px;
+    color: var(--darkpink);
+    line-height: 1.15;
+  }
+  &__list-text {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.7;
+  }
+}
