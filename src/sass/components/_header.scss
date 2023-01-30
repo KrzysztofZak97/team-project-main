@@ -54,6 +54,143 @@
       }
     }
   }
+
+  .milk-depiction {
+    display: block;
+    position: absolute;
+    left: 150px;
+    top: 300px;
+    width: 114px;
+    &__text {
+      font-style: normal;
+      font-size: 8px;
+      line-height: 150%;
+      color: var(--white);
+    }
+  }
+  .header-number {
+    z-index: 2;
+    &__dot {
+      position: absolute;
+      left: 35px;
+      top: -2px;
+      margin: 0;
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+      background-color: var(--white);
+    }
+    &__text {
+      display: flex;
+      flex-direction: column;
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-size: 8px;
+      line-height: 10px;
+      text-align: right;
+      color: var(--white);
+    }
+    &__text--nr {
+      z-index: 2;
+      font-family: var(--titan);
+      font-style: normal;
+      font-size: 28px;
+      line-height: 32px;
+      text-align: right;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--darkpink);
+    }
+  }
+  .header-number2 {
+    margin-top: 13px;
+    &__dot {
+      position: absolute;
+      left: 35px;
+      top: 13px;
+      margin: 0;
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+      background-color: var(--white);
+    }
+    &__text {
+      display: flex;
+      flex-direction: column;
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-size: 8px;
+      line-height: 10px;
+      text-align: right;
+      color: var(--white);
+    }
+    &__text--nr {
+      z-index: 2;
+      font-family: var(--titan);
+      font-style: normal;
+      font-size: 28px;
+      line-height: 32px;
+      text-align: right;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--darkpink);
+    }
+  }
+  .nr-position {
+    position: absolute;
+    top: 94px;
+    left: 681px;
+    display: flex;
+    flex-direction: column;
+  }
+  .nr-box {
+    position: relative;
+  }
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .header-box {
+      background-image: url('../images/bigice@2x.png'), url('../images/girl@2x.png'),
+        url('../images/milk@2x.png'), url('../images/ellipsetablet.png');
+      background-size: 143px 336px, 168px 133px, 124px 126px, 324px 332px;
+      background-position: left 378px top 62px, left 566px top 265px, left 34px top 250px,
+        left 307px top 30px;
+    }
+  }
+  @media screen and (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+    .header-box {
+      background-image: url('../images/bigice@3x.png'), url('../images/girl@3x.png'),
+        url('../images/milk@3x.png'), url('../images/ellipsetablet.png');
+      background-size: 143px 336px, 168px 133px, 124px 126px, 324px 332px;
+      background-position: left 378px top 62px, left 566px top 265px, left 34px top 250px,
+        left 307px top 30px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .header-box {
+    background-image: url('../images/bigice.png'), url('../images/girl.png'),
+      url('../images/milk.png'), url('../images/ellipsetablet.png');
+    background-size: 143px 336px, 168px 133px, 124px 126px, 324px 332px;
+    background-position: left 378px top 62px, left 566px top 265px, left 34px top 250px,
+      left 307px top 30px;
+    &__text {
+      font-weight: 400;
+      font-style: normal;
+      max-width: 162px;
+      margin-top: 15px;
+      color: var(--white);
+      font-family: var(--titan);
+      font-size: 22px;
+      line-height: 1.15;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      &--item {
+        font-size: 37px;
+        line-height: 0.96;
+        color: var(--darkpink);
+      }
+    }
+  }
+
   .milk-depiction {
     display: block;
     position: absolute;
