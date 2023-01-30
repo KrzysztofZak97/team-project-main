@@ -107,6 +107,7 @@
     padding-right: 39px;
   }
   &__button {
+<<<<<<< Updated upstream
     background-image: url(../images/arrow-right.png);
     width: 40px;
     height: 40px;
@@ -115,5 +116,21 @@
     background-size: cover;
     border-style: none;
     margin-bottom: 41px;
+=======
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-style: none;
+    margin-bottom: 41px;
+    background-color: var(--white);
+    position: relative;
+  }
+
+  &__icon {
+    fill: var(--darkpink);
+    position: absolute;
+    top: 12px;
+    left: 12px;
+>>>>>>> Stashed changes
   }
 }
