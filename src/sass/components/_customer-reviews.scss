@@ -1,10 +1,11 @@
 .customer-review {
-  padding: 80px 20px;
-  justify-content: center;
-  max-width: 100%;
-  min-width: 320px;
+  margin: 0 auto;
+  padding: 80px 20;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
   &__list {
     list-style: none;
+    padding-inline-start: 0px;
   }
   &__item {
     flex-direction: column;
@@ -16,7 +17,7 @@
     }
   }
   &__text-container {
-    padding: 40px 62px 25px 62px;
+    padding: 40px 42px 25px;
     background-color: #fafafa;
     text-align: center;
     position: relative;
@@ -33,6 +34,8 @@
     }
   }
   &__text {
+    margin-block-start: 0;
+    margin-block-end: 0;
     flex-direction: column;
     background: repeating-linear-gradient(
       180deg,
@@ -44,7 +47,10 @@
     position: relative;
     z-index: 2;
     font-size: 12px;
-    line-height: 31px;
+    font-weight: 500;
+    line-height: 2.55;
+    text-align: center;
+    padding: 2px 25px 0px 20px;
     &:before {
       background-image: url(../images/review-quote.png);
       content: '';
@@ -64,6 +70,9 @@
     padding-top: 18px;
   }
   &__slide-dots {
+    padding-inline-start: 0px;
+    argin-block-start: 0em;
+    margin-block-end: 0em;
     padding-top: 30px;
     list-style: none;
     display: flex;
@@ -91,5 +100,39 @@
     background-color: #ffff;
     fill: --buttonhome;
     padding-bottom: 6px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .customer-review {
+    padding: 120px 74px;
+    &__text-container {
+      padding: 45px 80px 34px 80px;
+    }
+    &__text {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 2.1;
+    }
+    &__person-name {
+      font-size: 16px;
+    }
+  }
+}
+@media screen and (min-width: 1280px) {
+  .customer-review {
+    padding: 120px 176px;
+
+    &__text-container {
+      padding: 45px 88px 35px 88px;
+    }
+
+    &__text {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.8;
+    }
+    &__person-name {
+      font-size: 20px;
+    }
   }
 }
