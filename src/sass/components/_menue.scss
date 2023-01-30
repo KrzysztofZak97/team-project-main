@@ -1,0 +1,147 @@
+.main__inputs {
+  list-style: none;
+  text-transform: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+
+  & ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-inline-start: 0;
+  }
+}
+#toggle {
+  display: none;
+}
+
+// Hamburger
+
+.hamburger {
+  z-index: 100;
+  position: fixed;
+  top: 23px;
+  right: 20px;
+  width: 14px;
+  height: 14px;
+
+  & div {
+    position: relative;
+    width: 18px;
+    height: 1.5px;
+    border-radius: 3px;
+    background-color: var(--darkpink);
+    margin-top: 4px;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+// Nav Styles
+
+.nav {
+  z-index: 4;
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  background-color: var(--modalmenucolor);
+  top: -100%;
+  right: -10%;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0);
+
+  &-wrapper {
+    position: relative;
+    overflow: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+
+  & a {
+    text-decoration: none;
+
+    color: #ffffff;
+
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 1px;
+
+    &:hover,
+    :focus {
+      color: var(--darkpink);
+    }
+  }
+
+  & ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  & li {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 21px;
+    border-bottom: 1px solid var(--bordermenue);
+  }
+  nav li:first-child {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 19px;
+    padding-left: 21px;
+    padding-right: 20px;
+  }
+
+  & button {
+    width: 209px;
+    height: 44px;
+    border: none;
+    background: var(--white);
+    border-radius: 22px;
+  }
+}
+
+//Animations
+
+#toggle:checked + .hamburger .top-bun {
+  transform: rotate(-45deg);
+  margin-top: 8px;
+  background-color: var(--white);
+}
+#toggle:checked + .hamburger .bottom-bun {
+  opacity: 0;
+  transform: rotate(45deg);
+  background-color: var(--white);
+}
+#toggle:checked + .hamburger .meat {
+  transform: rotate(45deg);
+  margin-top: -1.5px;
+  background-color: var(--white);
+}
+#toggle:checked + .hamburger + .nav {
+  top: 0;
+  right: 0;
+  transform: scale(1);
+}
+
+// ============= Tablet =============
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hamburger {
+    position: absolute;
+    top: 52px;
+    right: 240px;
+  }
+
+  #toggle:checked + .hamburger {
+    position: fixed;
+    top: 23px;
+    right: 20px;
+  }
+}
+
+// ============= Desktop =============
+@media screen and (min-width: 1200px) {
+  .hamburger {
+    display: none;
+  }
+}

@@ -24,9 +24,51 @@
     color: var(--darkpink);
   }
 }
+.button-text {
+  display: none;
+}
+.button-buy {
+  display: none;
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .btn-box {
     margin-top: 20px;
-    padding-bottom: 19px;
+    padding-bottom: 160px;
+  }
+  .button-text {
+    display: block;
+    position: relative;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    border: 0px;
+    margin-top: 7px;
+    &__icon {
+      position: absolute;
+      top: 5.5;
+      left: 5.5;
+      fill: var(--darkpink);
+    }
+  }
+  .button-buy {
+    position: absolute;
+    left: 574px;
+    top: 38px;
+    border-radius: 50px;
+    border: 0px;
+    width: 160px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__text {
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 21px;
+      color: var(--darkpink);
+      margin-right: 12px;
+    }
   }
 }
