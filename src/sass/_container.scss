@@ -4,3 +4,15 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    padding-left: 46px;
+    padding-right: 46px;
+  }
+}
