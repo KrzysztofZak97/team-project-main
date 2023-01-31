@@ -23,6 +23,7 @@
     "posthtml-include": "^1.7.4"
   },
   "dependencies": {
-    "lightgallery": "^2.7.1"
+    "lightgallery": "^2.7.1",
+    "lightgallery.js": "^1.4.0"
   }
 }

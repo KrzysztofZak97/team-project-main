@@ -36,16 +36,46 @@
 
     <script src="./index.js" type="module"></script>
     <script src="./js/customer-reviews.js"></script>
-    <script dist="node_modules\lightgallery\react\Lightgallery.umd.js"></script>
-    <script dist="node_modules\lightgallery\plugins\zoom\lg-zoom.umd.js"></script>
-    <script dist="node_modules\lightgallery\plugins\thumbnail\lg-thumbnail.umd.js"></script>
-
+    <script src="../node_modules/lightgallery.js/dist/js/lightgallery.min.js"></script>
+    <script src="../node_modules/lightgallery.js/dist/css/lightgallery.min.css"></script>
+    <script src="../node_modules\lightgallery\plugins\thumbnail\lg-thumbnail.min.js"></script>
+    <script src="../node_modules\lightgallery\plugins\fullscreen\lg-fullscreen.min.js"></script>
+    
     <script type="text/javascript">
-      lightGallery(document.getElementById('lightgallery'), {
-          plugins: [lgZoom, lgThumbnail],
-          speed: 500,
-          // ... other settings
-      });
-  </script>
+      function goToNext() {
+        var get_next_id = $('.gallery').next().attr("id");
+        alert(get_next_id);
+      }
+
+        lightGallery(document.getElementById('lightgallery__3'));
+        lightGallery(document.getElementById('lightgallery__4'));
+        lightGallery(document.getElementById('lightgallery__5'));
+        lightGallery(document.getElementById('lightgallery__6'));
+        lightGallery(document.getElementById('lightgallery__7'));
+        lightGallery(document.getElementById('lightgallery__8'));
+        lightGallery(document.getElementById('lightgallery__9'));
+        lightGallery(document.getElementById('lightgallery__11'));
+
+        var el = document.getElementById('lightgallery__1');
+ 
+ var slide = '<a href="gallery\1.jpg">' +
+     '<a href="gallery\2.jpg">' +
+ '</a>';
+  
+ lightGallery(el);
+  
+ document.getElementById('appendSlide').addEventListener('click', function() {
+     el.insertAdjacentHTML('beforeend', slide);
+     window.lgData[el.getAttribute('lg-uid')].destroy(true);
+     lightGallery(el);
+ }, false);
+ 
+document.getElementById('appendSlide').addEventListener('click', function() {
+    el.insertAdjacentHTML('beforeend', slide);
+    window.lgData[el.getAttribute('lg-uid')].destroy(true);
+    lightGallery(el);
+}, false);
+    </script>
+
   </body>
 </html>
