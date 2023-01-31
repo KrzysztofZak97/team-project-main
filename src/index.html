@@ -40,6 +40,12 @@
     <script dist="node_modules\lightgallery\plugins\zoom\lg-zoom.umd.js"></script>
     <script dist="node_modules\lightgallery\plugins\thumbnail\lg-thumbnail.umd.js"></script>
 
-    
+    <script type="text/javascript">
+      lightGallery(document.getElementById('lightgallery'), {
+          plugins: [lgZoom, lgThumbnail],
+          speed: 500,
+          // ... other settings
+      });
+  </script>
   </body>
 </html>
