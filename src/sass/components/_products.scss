@@ -29,7 +29,6 @@
 
   &__container {
     max-width: 280px;
-
     margin: 0 auto;
     background-color: var(--lightpink);
     border-radius: 24px;
@@ -101,13 +100,12 @@
     font-size: 14px;
     font-weight: 700;
     line-height: 1.5;
-    letter-spacing: 00.04em;
+    letter-spacing: 0.04em;
     color: var(--white);
     padding-left: 41px;
     padding-right: 39px;
   }
   &__button {
-    background-image: url(../images/arrow-right.png);
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -124,5 +122,129 @@
     position: absolute;
     top: 12px;
     left: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  .products {
+    padding-top: 122px;
+    padding-bottom: 112px;
+
+    &__wrap {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+
+    &__label {
+      font-size: 26px;
+      line-height: 1.15;
+    }
+
+    &__title {
+      font-size: 48px;
+      padding-bottom: 150px;
+    }
+    &__container {
+      max-width: 220px;
+      margin-bottom: 0;
+
+      &--beige {
+        margin-bottom: 0;
+      }
+
+      &::before {
+        position: absolute;
+        top: -103px;
+        background-image: url(../images/smallice@2x.png);
+        width: 220px;
+        height: 226px;
+      }
+
+      &--beige::before {
+        background-image: url(../images/coffee@2x.png);
+        
+      }
+
+      &--mint::before {
+        background-image: url(../images/shake@2x.png);
+      }
+    }
+    &__title-secondary {
+      padding-top: 152px;
+      line-height: 1.13;
+      
+    }
+    &__text {
+      padding-left: 11px;
+      padding-right: 11px;
+      line-height: 1.79;
+    }
+    &__button {
+      margin-top: 10px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+
+@media (min-width: 1280px) {
+  .products {
+    padding-top: 127px;
+    padding-bottom: 119px;
+
+    &__wrap {
+      gap: 29px;
+    }
+
+    &__label {
+      font-size: 30px;
+      line-height: 1.13;
+    }
+
+    &__title {
+      font-size: 58px;
+      padding-bottom: 259px;
+      line-height: 1.13;
+      letter-spacing: 0.06em;
+    }
+    &__container {
+      max-width: 329px;
+      gap: 32px;
+      
+      &::before {
+        position: absolute;
+        top: -215px;
+        background-image: url(../images/smallice@3x.png);
+        width: 335px;
+        height: 335px;
+        border-radius: 50%;
+      }
+
+      &--beige::before {
+        background-image: url(../images/coffee@3x.png);
+        
+      }
+
+      &--mint::before {
+        background-image: url(../images/shake@3x.png);
+      }
+    }
+    &__title-secondary {
+      padding-top: 163px;
+      font-size: 30px;
+    }
+    &__text {
+      padding-left: 44px;
+      padding-right: 45px;
+      font-size: 16px;
+      line-height: 1.75;
+    }
+    &__button {
+      margin-top: 30px;
+      margin-bottom: 50px;
+    }
   }
 }
