@@ -119,45 +119,44 @@
 @media screen and (min-width: 1280px) {
   .footer-box {
     background-color: var(--backgroundpink);
-    padding: 0 114px 0 121px;
+    padding: 0 114px 0 116px;
     &__wrapper {
-      width: 696px;
-      margin: 0 auto;
-    }
-    &__upper-part {
-      display: flex;
-      justify-content: space-between;
+      width: 1050px;
     }
     & h3 {
-      font-size: 26px;
+      font-size: 30px;
       line-height: 1.145;
-      margin-bottom: 16px;
+      margin-bottom: 15px;
     }
     & h2 {
-      font-size: 48px;
+      font-size: 58px;
       line-height: 1.145;
-      letter-spacing: 0.06em;
-      margin-bottom: 164px;
+      margin-bottom: 97px;
+    }
+    &__line-break {
+      display: none;
     }
     &__social-list {
-      gap: 30px;
+      gap: 24px;
     }
     &__icon-container {
       width: 34px;
       height: 34px;
     }
+    &__social-link:hover &__icon-container,
+    &__social-link:focus &__icon-container {
+      background-color: var(--buttonhover);
+    }
+    &__social-link:focus {
+      outline: none;
+    }
     &__contact {
-      font-size: 14px;
+      margin-top: 50px;
+      font-size: 16px;
     }
     &__all-rights {
-      padding: 29px 0 18px;
-      display: flex;
-      justify-content: center;
-      gap: 4px;
-      & p {
-        font-size: 14px;
-        line-height: 1.86;
-      }
+      padding: 9px 0 10px;
+      gap: 6px;
     }
   }
 }
