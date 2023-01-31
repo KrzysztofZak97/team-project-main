@@ -1,0 +1,136 @@
+.products {
+  padding-top: 121px;
+  padding-bottom: 98px;
+  text-align: center;
+
+  &__list {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  &__label {
+    font-family: var(--titan);
+    font-size: 18px;
+    line-height: 1.17;
+    color: var(--pink);
+    text-transform: uppercase;
+    padding-bottom: 15px;
+  }
+
+  &__title {
+    font-family: var(--titan);
+    font-size: 34px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    color: var(--darkpink);
+    text-transform: uppercase;
+    padding-bottom: 144px;
+  }
+
+  &__container {
+    max-width: 280px;
+
+    margin: 0 auto;
+    background-color: var(--lightpink);
+    border-radius: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    margin-bottom: 130px;
+
+    &--beige {
+      background-color: var(--beige);
+      margin-bottom: 129px;
+    }
+
+    &--mint {
+      background-color: var(--mint);
+      margin-bottom: 0;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -115px;
+      background-image: url(../images/smallice.png);
+      width: 249px;
+      height: 252px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &--beige::before {
+      background-image: url(../images/coffee.png);
+    }
+
+    &--mint::before {
+      background-image: url(../images/shake.png);
+    }
+  }
+  &__title-secondary {
+    font-family: var(--titan);
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    color: var(--white);
+    text-transform: uppercase;
+    padding-top: 161px;
+  }
+
+  &__list-secondary {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+  }
+
+  &__item::after {
+    content: '';
+    display: flex;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-right: 4px;
+    background-color: var(--white);
+  }
+
+  &__text {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 00.04em;
+    color: var(--white);
+    padding-left: 41px;
+    padding-right: 39px;
+  }
+  &__button {
+<<<<<<< Updated upstream
+    background-image: url(../images/arrow-right.png);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: none;
+    margin-bottom: 41px;
+=======
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-style: none;
+    margin-bottom: 41px;
+    background-color: var(--white);
+    position: relative;
+  }
+
+  &__icon {
+    fill: var(--darkpink);
+    position: absolute;
+    top: 12px;
+    left: 12px;
+>>>>>>> Stashed changes
+  }
+}
