@@ -1,0 +1,118 @@
+@import '../variables';
+
+.contacts-modal {
+    &--is-hidden {
+        pointer-events: none;
+        visibility: hidden;
+        opacity: 0;
+        position: fixed;
+    }
+}
+
+.contacts-modal {
+
+    &__loc-box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 22px 20px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 70vw;
+        height: 85vh;
+        background-color: var(--modalmenucolor);
+        border: none;
+        border-radius: 24px;
+        box-shadow: 0px 8px 30px rgba(73, 28, 39, 0.507);
+        z-index: 2;
+        transform: translate(-50%, -50%);
+    }
+
+    &__header {
+        position: relative;
+        top: 0;
+        left: 0;
+        max-width: 130px;
+        text-align: left;
+        font-family: var(--titan);
+        font-size: 22px;
+        font-weight: 400;
+        letter-spacing: 0.06em;
+        color: var(--white);
+        text-transform: uppercase;
+        
+        &--pink-style {
+            color: var(--darkpink);
+        }
+    }
+
+    &__btn-close {
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+        background: none;
+        fill: var(--white);
+        border: none;
+        border-radius: none;
+        cursor: pointer;
+
+        &--icon {
+            width: 100%;
+            height: 100%;
+        }
+
+        &--icon:hover,
+        &--icon:focus {
+            fill: var(--darkpink);
+            transform: scale(1.2) rotate(90deg);
+            transition: transform 0.2s ease-out;
+        }
+    }
+
+    &__map-wrapper {
+        width: 70%;
+        height: 70%;
+    }
+
+    &__map {
+        width: 143%;
+        height: 121%;
+        border: none;
+        box-shadow: 0px 3px 15px rgba(255, 255, 255, 0.233);
+        border-radius: 12px;
+    }
+}
+
+@media (min-width: 768px) {    
+    
+    .contacts-modal {
+    
+        &__loc-box {
+            gap: 35px;
+            padding: 22px 35px;
+        }
+    
+        &__header {
+            max-width: 300px;
+            font-size: 26px;
+        }
+    
+        &__btn-close {
+            right: 25px;
+        }
+    }
+}
+
+@media (min-width: 1280px) {    
+    
+    .contacts-modal {
+
+        &__header {
+            font-size: 32px;
+        }
+    }
+}
