@@ -125,6 +125,7 @@
             &--locations:focus {
                 background: #ff0040;
                 color: var(--white);
+                transition: var(--cubic-bezier);
             }
 
             &--franchise {
@@ -136,6 +137,7 @@
             &--franchise:focus {
                 background: var(--greybtnhover);
                 color: #D41443;
+                transition: var(--cubic-bezier);
             }
         }
     }
@@ -205,7 +207,6 @@
 
     .contacts {
         padding-bottom: 165px;
-        // background: ;
         background-image: 
         url(../images/contacts-pink-stains.png),
         linear-gradient(0deg, rgba(255, 245, 246, 1) 88%, rgba(255,255,255,1) 88%);
@@ -214,7 +215,9 @@
         background-repeat: no-repeat;
 
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-            background-image: url(../images/contacts-pink-stains@2x.png);
+            background-image:
+            url(../images/contacts-pink-stains.png),
+            linear-gradient(0deg, rgba(255, 245, 246, 1) 88%, rgba(255,255,255,1) 88%);
           }
 
         &__wrapper {            
