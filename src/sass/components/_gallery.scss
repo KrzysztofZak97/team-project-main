@@ -1,3 +1,5 @@
+
+
 .gallery {
     width:auto;
     max-width:auto;
@@ -80,6 +82,12 @@
         }
         &__space {padding-bottom: 20px;}
 }
+.lg-toolbar-next:before {
+  content: "\e094";
+}
+.lg-toolbar-prev:before {
+  content: "\e095";}
+
 
     // ============= Tablet =============
         @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -134,4 +142,3 @@
             &__space {padding-bottom: 80px;}
         }
     }
-    
