@@ -32,6 +32,57 @@
 .navi {
   display: none;
 }
+
+@keyframes firstSlideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes secondSlideInFromLeft {
+  0% {
+    transform: translateX(-123%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(-123%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes thridSlideInFromLeft {
+  0% {
+    transform: translateX(-265%);
+    opacity: 0;
+  }
+  67% {
+    transform: translateX(-265%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.logo {
+  animation: 400ms cubic-bezier(0.9, 0.17, 0.83, 0.67) 0s 1 firstSlideInFromLeft;
+}
+.header-box__text {
+  animation: 800ms cubic-bezier(0.9, 0.17, 0.83, 0.67) 0s 1 secondSlideInFromLeft;
+}
+.btn-box__red,
+.btn-box__white {
+  animation: 1200ms cubic-bezier(0.9, 0.17, 0.83, 0.67) 0s 1 thridSlideInFromLeft;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header-box {
     width: 768px;
