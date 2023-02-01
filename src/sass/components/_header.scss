@@ -31,11 +31,12 @@
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header-box {
+    width: 768px;
     background-image: url('../images/bigice.png'), url('../images/girl.png'),
       url('../images/milk.png'), url('../images/ellipsetablet.png');
     background-size: 143px 336px, 168px 133px, 124px 126px, 324px 332px;
-    background-position: left 378px top 62px, left 566px top 265px, left 34px top 250px,
-      left 307px top 30px;
+    background-position: right 247px top 62px, right 34px top 265px, left 34px top 250px,
+      right 137px top 30px;
     &__text {
       font-weight: 400;
       font-style: normal;
@@ -136,10 +137,13 @@
       color: var(--darkpink);
     }
   }
+  .bg-header {
+    background-color: var(--lightpink);
+  }
   .nr-position {
     position: absolute;
     top: 94px;
-    left: 681px;
+    right: 41px;
     display: flex;
     flex-direction: column;
   }
@@ -151,8 +155,8 @@
       background-image: url('../images/bigice@2x.png'), url('../images/girl@2x.png'),
         url('../images/milk@2x.png'), url('../images/ellipsetablet.png');
       background-size: 143px 336px, 168px 133px, 124px 126px, 324px 332px;
-      background-position: left 378px top 62px, left 566px top 265px, left 34px top 250px,
-        left 307px top 30px;
+      background-position: right 247px top 62px, right 34px top 265px, left 34px top 250px,
+        right 137px top 30px;
     }
   }
   @media screen and (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
@@ -160,13 +164,14 @@
       background-image: url('../images/bigice@3x.png'), url('../images/girl@3x.png'),
         url('../images/milk@3x.png'), url('../images/ellipsetablet.png');
       background-size: 143px 336px, 168px 133px, 124px 126px, 324px 332px;
-      background-position: left 378px top 62px, left 566px top 265px, left 34px top 250px,
-        left 307px top 30px;
+      background-position: right 247px top 62px, right 34px top 265px, left 34px top 250px,
+        right 137px top 30px;
     }
   }
 }
 @media (min-width: 1200px) {
   .header-box {
+    width: 1280px;
     background-image: url('../images/bigice.png'), url('../images/girl.png'),
       url('../images/milk.png'), url('../images/ellipsetablet.png');
     background-size: 143px 336px, 168px 133px, 124px 126px, 324px 332px;
@@ -203,6 +208,9 @@
       line-height: 150%;
       color: var(--white);
     }
+  }
+  .bg-header {
+    background-color: var(--lightpink);
   }
   .header-number {
     z-index: 2;
@@ -275,7 +283,7 @@
   .nr-position {
     position: absolute;
     top: 94px;
-    left: 681px;
+    right: 34px;
     display: flex;
     flex-direction: column;
   }
