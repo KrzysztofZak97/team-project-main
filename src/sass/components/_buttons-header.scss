@@ -52,7 +52,7 @@
   }
   .button-buy {
     position: absolute;
-    left: 574px;
+    right: 34px;
     top: 38px;
     border-radius: 50px;
     border: 0px;
@@ -61,6 +61,79 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    &__text {
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 21px;
+      color: var(--darkpink);
+      margin-right: 12px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .btn-box {
+    margin-top: 20px;
+    margin-left: 115px;
+    padding-bottom: 160px;
+    &__red {
+      border-radius: 50px;
+      margin-right: 8px;
+      padding-left: 15.5px;
+      padding-right: 15.5px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.28;
+      border: 0;
+      height: 40px;
+      background-color: var(--darkpink);
+      color: var(--white);
+    }
+    &__red:hover {
+      cursor: pointer;
+    }
+    &__white {
+      @extend .btn-box__red;
+      background-color: var(--white);
+      color: var(--darkpink);
+    }
+  }
+  .button-text {
+    display: block;
+    position: relative;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    border: 0px;
+    margin-top: 20px;
+    &:hover {
+      cursor: pointer;
+    }
+    &__icon {
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      top: 8.5;
+      left: 8.5;
+      fill: var(--darkpink);
+    }
+  }
+  .button-buy {
+    position: absolute;
+    right: 34px;
+    top: 38px;
+    border-radius: 50px;
+    border: 0px;
+    width: 160px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      cursor: pointer;
+    }
     &__text {
       font-family: 'DM Sans';
       font-style: normal;

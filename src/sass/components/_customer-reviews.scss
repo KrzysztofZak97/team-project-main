@@ -35,6 +35,7 @@
     }
   }
   &__text {
+    max-width: 157px;
     margin-block-start: 0;
     margin-block-end: 0;
     flex-direction: column;
@@ -49,9 +50,9 @@
     z-index: 2;
     font-size: 12px;
     font-weight: 500;
-    line-height: 2.55;
+    line-height: 2.5;
     text-align: center;
-    padding: 2px 25px 0px 20px;
+    padding: 3px 5px 0px 5px;
     &:before {
       background-image: url(../images/review-quote.png);
       content: '';
@@ -60,7 +61,7 @@
       height: 40px;
       position: absolute;
       top: -10px;
-      left: 15px;
+      left: 4px;
     }
   }
   &__person {
@@ -110,6 +111,7 @@
       padding: 45px 80px 34px 80px;
     }
     &__text {
+      max-width: 460px;
       font-size: 14px;
       font-weight: 500;
       line-height: 2.1;
@@ -128,6 +130,8 @@
     }
 
     &__text {
+      max-width: 750px;
+      padding: 3px 5px 0px 45px;
       font-size: 16px;
       font-weight: 500;
       line-height: 1.8;
