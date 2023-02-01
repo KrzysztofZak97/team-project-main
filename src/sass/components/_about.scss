@@ -75,12 +75,14 @@
   flex-direction: column;
   justify-content: flex-start;
   padding: 0 30px;
-
+  max-width: 270px;
   @media screen and (min-width: 768px) {
     padding: 50px 0px 0 17px;
+    max-width: 350px;
   }
   @media screen and (min-width: 1200px) {
     padding: 51px 0px 0 74px;
+    max-width: 500px;
   }
 }
 
@@ -130,6 +132,7 @@
   margin-bottom: 35px;
   font-size: 12px;
   line-height: 162%;
+
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 25px;
@@ -142,6 +145,7 @@
 
 .about__description--primary {
   color: var(--black);
+
   @media screen and (min-width: 1200px) {
     font-size: 16px;
     line-height: 28px;
