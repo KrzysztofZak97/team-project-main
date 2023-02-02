@@ -44,8 +44,8 @@
         list-style: none;
         display: grid;
         grid-template-columns: auto auto auto auto auto auto auto;
-        column-gap: 1%;
-        row-gap: 0.3%;
+        column-gap: 0.6%;
+        row-gap: 1%;
 
         & li a {
             display: block;
