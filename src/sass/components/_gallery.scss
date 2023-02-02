@@ -1,9 +1,21 @@
-.gallery {
-    background: linear-gradient(var(--backgroundpink) 40%, var(--white) 20% 100%);
+.gallery__section { 
+    background: fixed;
+    background: linear-gradient(var(--backgroundpink) 45%, var(--white) 45% 100%);}
+
+    .gallery {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    max-width: 1280px;
+    
+    & section {
+        background: fixed;
+        background: linear-gradient(var(--backgroundpink) 90%, var(--white) 10% 100%);
+    }
 
     & ul {
         margin: 0;
