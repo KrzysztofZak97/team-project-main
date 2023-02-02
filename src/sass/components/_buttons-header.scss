@@ -61,6 +61,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--white);
     &__text {
       font-family: 'DM Sans';
       font-style: normal;
@@ -93,11 +94,15 @@
     }
     &__red:hover {
       cursor: pointer;
+      background-color: var(--pinkbtnhover);
     }
     &__white {
       @extend .btn-box__red;
       background-color: var(--white);
       color: var(--darkpink);
+    }
+    &__white:hover {
+      background-color: var(--greybtnhover);
     }
   }
   .button-text {
@@ -108,8 +113,10 @@
     height: 26px;
     border: 0px;
     margin-top: 20px;
+    background-color: var(--white);
     &:hover {
       cursor: pointer;
+      background-color: var(--greybtnhover);
     }
     &__icon {
       width: 10px;
@@ -131,8 +138,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--white);
     &:hover {
       cursor: pointer;
+      background-color: var(--greybtnhover);
     }
     &__text {
       font-family: 'DM Sans';

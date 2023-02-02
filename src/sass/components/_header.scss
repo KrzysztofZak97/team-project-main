@@ -223,11 +223,10 @@
   .header-box {
     width: 1280px;
     height: 665px;
-    background-image: url('../images/bigice.png'), url('../images/girl.png'),
-      url('../images/milk.png'), url('../images/ellipsetablet.png');
-    background-size: 236px 557px, 293px 232px, 188px 191px, 538px 538px;
-    background-position: right 450px top 108px, right 109px top 433px, left 77px top 429px,
-      right 257px top 52px;
+    background-image: url('../images/girl.png'), url('../images/milk.png'),
+      url('../images/ellipsetablet.png');
+    background-size: 293px 232px, 188px 191px, 538px 538px;
+    background-position: right 109px top 433px, left 77px top 429px, right 257px top 52px;
     &__text {
       max-width: 277px;
       margin-top: 84px;
@@ -240,7 +239,11 @@
       }
     }
   }
-
+  .bigice {
+    position: absolute;
+    right: 450px;
+    top: 108px;
+  }
   .milk-depiction {
     display: block;
     position: absolute;
