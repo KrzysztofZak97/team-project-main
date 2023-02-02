@@ -112,6 +112,12 @@
       right: -24px;
       bottom: -3px;
     } 
+    &:hover,
+      :focus {
+        background: var(--greybtnhover);
+        color: #D41443;
+        transition: var(--cubic-bezier)
+      }
   }
 }
 
@@ -143,7 +149,7 @@
   .hamburger {
     position: absolute;
     top: 52px;
-    right: 240px;
+    right: calc(50% - 160px);
   }
 
   #toggle:checked + .hamburger {
