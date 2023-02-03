@@ -67,6 +67,7 @@
     flex-direction: row;
     align-items: flex-start;
     flex-wrap: nowrap;
+    justify-content: center;
   }
 }
 
@@ -156,6 +157,9 @@
 }
 .about__description--tablet {
   margin-bottom: 62px;
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 45px;
+  }
 }
 
 .about__button {
