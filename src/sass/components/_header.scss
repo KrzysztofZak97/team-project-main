@@ -255,6 +255,8 @@
   }
   .bg-header {
     background-color: var(--lightpink);
+    display: flex;
+    justify-content: center;
   }
   .header-number {
     z-index: 2;
