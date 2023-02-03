@@ -521,6 +521,7 @@ ul {
     height: 18px;
     border: 0px;
     margin-top: 7px;
+    background-color: var(--white);
   }
   .button-text__icon {
     position: absolute;
@@ -1869,7 +1870,7 @@ ul {
   .hamburger {
     position: absolute;
     top: 52px;
-    right: 240px;
+    right: 220px;
   }
   #toggle:checked + .hamburger {
     position: fixed;
