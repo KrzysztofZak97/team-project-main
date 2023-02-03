@@ -336,10 +336,8 @@
     position: relative;
   }
   .navi {
-    position: absolute;
-    top: 48px;
-    left: 373px;
     display: flex;
+    margin-top: 50px;
     &__text {
       font-style: normal;
       font-weight: 700;
@@ -355,6 +353,32 @@
     }
     &:last-child {
       margin-right: 0px;
+    }
+  }
+  .menu-desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+  .fix-menu {
+    width: 100%;
+    justify-content: space-between;
+    z-index: 50;
+    position: fixed;
+    background-color: var(--lightpink);
+    top: 0;
+    width: 1280px;
+    .logo {
+      margin-left: 50px;
+      margin-top: 19px;
+      margin-bottom: 19px;
+    }
+    .navi {
+      margin-top: 35px;
+    }
+    .button-buy {
+      margin-top: 19px;
+      margin-bottom: 19px;
+      margin-right: 30px;
     }
   }
 }
