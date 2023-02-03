@@ -1,6 +1,8 @@
 .gallery__section { 
     background: fixed;
     background: linear-gradient(var(--backgroundpink) 45%, var(--white) 45% 100%);
+    display: flex;
+    justify-content: center;
 }
 
 .gallery__text{ 
